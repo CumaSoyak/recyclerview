@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+
 
 
          var superkahramanısımlerı=ArrayList<String>()
@@ -25,9 +25,9 @@ class MainActivity : AppCompatActivity() {
 
         val BatmanBıtmap=BitmapFactory.decodeResource(applicationContext.resources,R.drawable.batman)
         val SupermanBıtmap= BitmapFactory.decodeResource(applicationContext.resources,R.drawable.superman)
-        val IronmanBıtmap= BitmapFactory.decodeResource(applicationContext.resources,R.drawable.ıronman)
+        val IronmanBıtmap= BitmapFactory.decodeResource(applicationContext.resources,R.drawable.ironman)
         val AquammanBıtmap= BitmapFactory.decodeResource(applicationContext.resources,R.drawable.aquaman)
-        val SpıdermanBıtmap= BitmapFactory.decodeResource(applicationContext.resources,R.drawable.spıderman)
+        val SpıdermanBıtmap= BitmapFactory.decodeResource(applicationContext.resources,R.drawable.spiderman)
 
 
         var superkahramangorsellerı= ArrayList<Bitmap>()
@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
 
 
         val adapter=RecyclerAdapter (superkahramanısımlerı,superkahramangorsellerı)
-
+        binding.recyclerView.adapter=adapter
+        setContentView(binding.root)
     }
 }

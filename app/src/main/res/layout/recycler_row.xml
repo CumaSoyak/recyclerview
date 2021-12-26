@@ -12,13 +12,7 @@
         android:textSize="20sp"
         android:text="test"
         android:textColor="#1730BC"
-        android:layout_margin="5dp"
-
-
-
-        >
-
-
+        android:layout_margin="5dp">
     </TextView>
 
 </LinearLayout>
